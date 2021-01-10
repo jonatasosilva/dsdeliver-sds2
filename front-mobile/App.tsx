@@ -6,9 +6,8 @@ import {
   OpenSans_400Regular,
   OpenSans_700Bold,
 } from "@expo-google-fonts/open-sans";
-import Header from "./src/Header";
 import AppLoading from "expo-app-loading";
-import Home from "./src/Home";
+import Routes from "./src/Routes";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -22,9 +21,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Header />
       <StatusBar style="auto" />
-      <Home />
+      <Routes />
     </View>
   );
 }
