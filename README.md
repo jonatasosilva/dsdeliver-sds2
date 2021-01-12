@@ -2,7 +2,7 @@
 ![cover](https://raw.githubusercontent.com/jonatasosilva/dsdeliver-sds2/master/assets/cover.jpeg)
 
 ## Sobre o projeto
-https://dsdeliver-sds2.jonatasosilva.vercel.app/
+[https://dsdeliver.jonatasosilva.dev/](https://dsdeliver.jonatasosilva.dev/)
 
 O projeto consiste em um sistema de registro e entrega de pedidos. Utilizamos Java com Spring Boot, e implementação no Heroku.
 
