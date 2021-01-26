@@ -14,7 +14,7 @@ function Header() {
     <TouchableWithoutFeedback onPress={handleOnPress}>
       <View style={styles.container}>
         <Image source={require("../assets/logo.png")} />
-        <Text style={styles.text}>DS Deliver</Text>
+        <Text style={styles.text}>DS Delivery</Text>
       </View>
     </TouchableWithoutFeedback>
   );
