@@ -1,42 +1,33 @@
-# DS Deliver
+# DSDelivery
 ![cover](https://raw.githubusercontent.com/jonatasosilva/dsdeliver-sds2/master/assets/cover.jpeg)
 
 ## Sobre o projeto
-[https://dsdeliver.jonatasosilva.dev/](https://dsdeliver.jonatasosilva.dev/)
+Sistema de registro e entrega de pedidos. As interfaces de usuário foram
+construídas com React e React Native. Já o back-end foi desenvolvido com
+Spring Boot.
 
-O projeto consiste em um sistema de registro e entrega de pedidos. Utilizamos Java com Spring Boot, e implementação no Heroku.
+[https://dsdelivery.jonatasosilva.dev/](https://dsdelivery.jonatasosilva.dev/)
 
 ## Como executar o projeto
 ### Pré-requisitos
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Git, Java e Node.js.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Docker, Docker Compose, Git e Node.js.
 
+### Back-end e Front-end
 ```bash
 # Clone este repositório
 $ git clone https://github.com/jonatasosilva/dsdeliver-sds2
 
-# Acesse a pasta do projeto no terminal/cmd
+# Acesse a pasta do projeto no terminal
 $ cd dsdeliver-sds2
-```
 
-### Back-end
-```bash
-# Vá para a pasta backend
-$ cd backend
+# Duplique o arquivo .env
+$ cp front-web/.env.example front-web/.env
 
-# Execute a aplicação
-$ ./mvnw spring-boot:run
-```
+# Adicione o seu token do Mapbox nas variáveis de ambiente
+$ nano front-web/.env
 
-### Front-end
-```bash
-# Vá para a pasta front-web
-$ cd front-web
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação
-$ npm start
+# Faça o build do container
+$ docker-compose up -d
 ```
 
 ### Mobile
@@ -45,10 +36,13 @@ $ npm start
 $ cd front-mobile
 
 # Instale as dependências
-$ npm install
+$ yarn install
+
+# Substitua o valor da constante API_URL pelo IP da sua máquina
+$ nano src/api.ts 
 
 # Execute a aplicação
-$ npm start
+$ yarn start
 ```
 
 ## Tecnologias
