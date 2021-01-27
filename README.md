@@ -46,7 +46,7 @@ $ yarn start
 ```
 
 ## Tecnologias
-### Backend ([Java](https://www.oracle.com/br/java/) + [Spring Boot](https://spring.io/projects/spring-boot))
+### Back-end ([Java](https://www.oracle.com/br/java/) + [Spring Boot](https://spring.io/projects/spring-boot))
 - [H2 Database Engine](https://www.h2database.com/)
 - [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/)
 - [Spring Boot Starter Data JPA](https://spring.io/guides/gs/accessing-data-jpa/)
