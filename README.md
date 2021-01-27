@@ -1,5 +1,5 @@
 # DSDelivery
-![cover](https://raw.githubusercontent.com/jonatasosilva/dsdeliver-sds2/master/assets/cover.jpeg)
+![cover](https://raw.githubusercontent.com/jonatasosilva/dsdeliver-sds2/master/assets/cover.gif)
 
 ## Sobre o projeto
 Sistema de registro e entrega de pedidos. As interfaces de usuário foram
